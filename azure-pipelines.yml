@@ -48,7 +48,7 @@ steps:
       appName: 'sampleapp-githubactions'
       package: '$(System.ArtifactsDirectory)/java-app/**/*.jar'
       deploymentMethod: 'auto'
-      ResourceGroupName: 'demosv'
+      ResourceGroupName: 'GitHubPOC'
 
 #  - task: AzureCLI@2
 #    inputs:
