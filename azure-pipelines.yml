@@ -43,7 +43,7 @@ steps:
   - task: AzureWebApp@1
     displayName: 'Deploy to Azure Web App'
     inputs:
-      azureSubscription: 'my-git-connection'  # Replace with the name of your Azure Resource Manager service connection
+      azureSubscription: 'GitHubPOC'  # Replace with the name of your Azure Resource Manager service connection
       appType: 'webApp'
       appName: 'sampleapp-githubactions'
       package: '$(System.ArtifactsDirectory)/java-app/**/*.jar'
