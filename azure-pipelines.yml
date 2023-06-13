@@ -40,15 +40,15 @@ steps:
       artifactName: 'java-app'
       downloadPath: '$(System.ArtifactsDirectory)'
 
-  - task: AzureWebApp@1
-    displayName: 'Deploy to Azure Web App'
-    inputs:
-      azureSubscription: 'GitHubPOC'  # Replace with the name of your Azure Resource Manager service connection
-      appType: 'webApp'
-      appName: 'sampleapp-githubactions'
-      package: '$(System.ArtifactsDirectory)/java-app/**/*.jar'
-      deploymentMethod: 'auto'
-      ResourceGroupName: 'GitHubPOC'
+  #- task: AzureWebApp@1
+   # displayName: 'Deploy to Azure Web App'
+    #inputs:
+     # azureSubscription: 'GitHubPOC'  # Replace with the name of your Azure Resource Manager service connection
+      #appType: 'webApp'
+      #appName: 'sampleapp-githubactions'
+      #package: '$(System.ArtifactsDirectory)/java-app/**/*.jar'
+      #deploymentMethod: 'auto'
+      #ResourceGroupName: 'GitHubPOC'
 
 #  - task: AzureCLI@2
 #    inputs:
